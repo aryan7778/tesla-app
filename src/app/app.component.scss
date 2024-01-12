@@ -1,0 +1,25 @@
+.navbar{
+    display: flex; 
+    border: 1px solid white;
+}
+.Step{
+    text-align: center;
+    flex: auto;  
+    align-items: center;
+    border: 1px solid white;
+    padding-top: 10px;
+
+    &.active {
+        background-color: rgba(80, 80, 80, 0.8);
+    }
+
+    &.disabled {
+        pointer-events: none;
+        color: grey;
+    }
+
+
+    &:not(:last-child) {
+        border-right: 1px solid white;
+    }
+}
